@@ -1,0 +1,34 @@
+section.fale-conosco h3{
+    padding: 1rem;
+}
+
+section.fale-conosco i{
+    margin-right: 10px
+}
+
+section.fale-conosco form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 3rem;
+}
+
+section.fale-conosco form input:not(input[type='submit']), textarea{
+    padding: .5rem 1rem;
+}
+
+section.fale-conosco form textarea{
+    height: 150px;
+    resize: none;
+}
+
+section.fale-conosco form input[type='submit']{
+    border: 0;
+    background-color: #a52a2a;
+    color: #fff;
+    border-radius: 10px;
+    padding: .5rem 0;
+    width: 200px;
+    align-self: center;
+    margin-bottom: 1rem;
+}

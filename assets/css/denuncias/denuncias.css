@@ -1,0 +1,33 @@
+section.denuncias{
+    padding: 1rem;
+}
+
+section.denuncias h3{
+    padding-bottom: 1rem;
+}
+
+section.denuncias form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 3rem 0 3rem;
+}
+
+section.denuncias form input:not(input[type='submit']), textarea{
+    padding: .5rem 1rem;
+}
+
+section.denuncias form textarea{
+    height: 150px;
+    resize: none;
+}
+
+section.denuncias form input[type='submit']{
+    border: 0;
+    background-color: #a52a2a;
+    color: #fff;
+    border-radius: 10px;
+    padding: .5rem 0;
+    width: 200px;
+    align-self: center;
+}

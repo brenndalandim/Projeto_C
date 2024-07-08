@@ -1,0 +1,71 @@
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-770px);
+    }
+}
+
+section.clientes h3{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+section .slider-container{
+    padding: 1rem 0 1rem .5rem;
+    display: flex;
+    overflow: hidden;
+}
+
+section .slider-container div.slider{
+    display: flex;
+    gap: 20px;
+    height: 105px;
+    animation: 15s infinite slide linear;
+}
+
+section .slider-container div.slider:hover{
+    animation-play-state: paused;
+}
+
+section .slider-container .slider div{
+    position: relative;
+}
+
+.slider div:hover{
+    .logo-hover{
+        opacity: 1;
+    }
+    .slider-img{
+        filter: blur(3px);
+    }
+}
+
+img.slider-img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+}
+
+span.logo-hover{
+    opacity: 0;
+    transition: all .25s ease-in-out;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+span.logo-hover p{
+    text-align: center;
+    font-weight: 800;
+}

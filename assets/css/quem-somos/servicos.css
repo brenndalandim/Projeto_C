@@ -1,0 +1,26 @@
+section.servicos{
+    padding: 1rem;
+}
+
+section.servicos div{
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+section.servicos div ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* section.servicos div ul li:not(li:last-child)::before{
+    content: "\2714";
+    margin-right: .5rem;
+    font-size: .8rem;
+} */
+
+section.servicos img{
+    width: 50%;
+    object-fit: cover;
+}

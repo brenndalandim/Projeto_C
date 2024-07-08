@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construtop</title>
+
+    
+    <!-- Fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Fonte Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Folhas de Estilo -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/fale-conosco/fale-conosco.css">
+    <link rel="stylesheet" href="assets/css/fale-conosco/informacoes.css">
+    
+</head>
+<body>
+    <header class="section">
+        <a href="index.html"><img class="logo-photo" src="assets/img/Logo Construtop com nome branco.png" alt="logo Construtop"></a>
+        <button class="btnmenu"><i class="bi bi-list"></i></button>
+    </header>
+    <nav class="containerMenu">
+        <ul class="menu">
+            <li>
+                <a href="index.html">
+                    Home
+                    <i class="bi bi-caret-right-fill"></i>
+                </a>
+            </li>
+            <li>
+                <a href="quem-somos.html">
+                    Quem Somos
+                    <i class="bi bi-caret-right-fill"></i>
+                </a>
+            </li>
+            <li>
+                <a href="projetos.html">
+                    Projetos
+                    <i class="bi bi-caret-right-fill"></i>
+                </a>
+            </li>
+            <li>
+                <a class="here">
+                    Fale Conosco
+                    <i class="bi bi-caret-right-fill"></i>
+                </a>
+            </li>
+            <li>
+                <a href="denuncias.html">
+                    Ética Profissional
+                    <i class="bi bi-caret-right-fill"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+    <section class="fale-conosco section">
+      <h3><i class="bi bi-envelope"></i>Fale Conosco</h3>
+      <form action="">
+        <input type="text" placeholder="Nome" id="nome" name="nome" minlength="3" required>
+        <input type="email" placeholder="E-mail" id="email" name="email" required>
+        <input type="tel" placeholder="Telefone" id="telefone" name="telefone">
+        <textarea name="mensagem" id="mensagem" placeholder="Mensagem" minlength="10" required></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+    <section class="infos section">
+      <div class="contato">
+        <h3>Contato</h3>
+        <a href="https://wa.me/5521997882626?text=Olá%20vim%20através%20do%20site"><i class="bi bi-whatsapp"></i> (21) 99788-2626</a>
+        <a href="tel:+552131160638"><i class="bi bi-telephone"></i> (21) 3116-0638</a>
+      </div>
+      <div class="local">
+        <h3>Localização </h3>
+        <p><i class="bi bi-geo-alt"></i> Estrada de Jacarepaguá, 7655/1014 – RJ</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14696.879951372466!2d-43.34133242793163!3d-22.94212399043374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd833ceca9b83%3A0x15d08ea48158ad98!2sConstrutop%20Engenharia%20e%20Consultoria%20Ltda!5e0!3m2!1spt-BR!2sbr!4v1720298425099!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <footer>
+        <p>© CONSTRUTOP ENGENHARIA E CONSULTORIA LTDA - CNPJ 10.222.829/0001-92</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+section.infos{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+section.infos div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    h3{
+        color: #a52a2a;
+    }
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+}
