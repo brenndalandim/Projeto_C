@@ -36,9 +36,26 @@ all_h3.forEach(element => {
     element.insertAdjacentElement('afterend', hr)
 });*/
 
-
+// Botões Slide Projetos
 let btnCarProjEsq = document.querySelectorAll('.carousel-control-prev-icon')
 btnCarProjEsq.forEach(element => element.innerHTML = '<i class="bi bi-chevron-left"></i>')
 
 let btnCarProjDir = document.querySelectorAll('.carousel-control-next-icon')
 btnCarProjDir.forEach(element => element.innerHTML = '<i class="bi bi-chevron-right"></i>')
+
+//Código Pre footer padrão
+let preFooter = document.querySelector('.pre-footer')
+
+preFooter.innerHTML = `
+<div class="contato">
+    <h3>Contato</h3>
+    <a href="https://wa.me/5521997882626?text=Olá%20vim%20através%20do%20site"><i class="bi bi-whatsapp"></i> (21) 99788-2626</a>
+    <a href="tel:+552131160638"><i class="bi bi-telephone"></i> (21) 3116-0638</a>
+    <a href="fale-conosco.html"><i class="bi bi-envelope"></i> Fale Conosco</a>
+</div>
+<img src="assets/img/Logo Construtop com nome branco.png" alt="">
+<div class="local">
+    <h3>Localização </h3>
+    <p><i class="bi bi-geo-alt"></i> Estrada de Jacarepaguá, 7655/1014 – RJ</p>
+</div>
+`
