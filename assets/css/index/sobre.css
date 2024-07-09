@@ -3,9 +3,7 @@ section div.text{
     flex-direction: column;
     gap: 16px;
     padding: 1rem;
-    top: 50%;
     background: white;
-    height: 50%;
 }
 
 section .text p{
@@ -18,9 +16,36 @@ section .text p .construtop{
 }
 
 section .sobre-imagem{
-    height: 50%;
     width: 100%;
     object-fit: cover;
     object-position: 0 60%;
     max-height: 500px;
+}
+
+@media screen and (min-width: 1024px) {
+    section.sobre {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    section .text{
+        width: 60%;
+        justify-content: space-evenly;
+        gap: 0 !important;
+    }
+
+    section .text p{
+        font-size: 16px;
+    }
+
+    section .text p .construtop{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    section .sobre-imagem{
+        max-height: 290px;
+        border-bottom-left-radius: 50px;
+    }
+
 }

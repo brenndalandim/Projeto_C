@@ -1,3 +1,4 @@
+//Menu Flutuante
 let main = document.querySelector('main')
 let btnMenu = document.querySelector('.btnmenu')
 let btnMenuClose = document.querySelector('.btnmenu.close')
@@ -29,12 +30,6 @@ btnMenu.addEventListener('click', () => {
 
 })
 
-/*let all_h3 = document.querySelectorAll('.section-title, .clientes h3')
-all_h3.forEach(element => {
-    console.log(element)
-    let hr = document.createElement('hr')
-    element.insertAdjacentElement('afterend', hr)
-});*/
 
 // Botões Slide Projetos
 let btnCarProjEsq = document.querySelectorAll('.carousel-control-prev-icon')
@@ -42,6 +37,7 @@ btnCarProjEsq.forEach(element => element.innerHTML = '<i class="bi bi-chevron-le
 
 let btnCarProjDir = document.querySelectorAll('.carousel-control-next-icon')
 btnCarProjDir.forEach(element => element.innerHTML = '<i class="bi bi-chevron-right"></i>')
+
 
 //Código Pre footer padrão
 let preFooter = document.querySelector('.pre-footer')

@@ -76,6 +76,7 @@ nav.containerMenu{
     opacity: 0;
     position: fixed;
     top: 0;
+    left: 0;
     transition: all .5s ease-in-out;
     display: flex;
     justify-content: space-between;
@@ -85,7 +86,6 @@ nav.containerMenu.open{
     visibility: visible;
     height: 100vh;
     width: 100vw;
-    /* width: 80%; */
     opacity: 1;
     z-index: 3;
 }
@@ -133,9 +133,9 @@ nav.containerMenu ul.menu a.here{
 
 .section-btn{
     font-size: 10px;
-    width: 70px;
+    width: fit-content;
     border-radius: 10px;
-    padding: 0.2rem 0;
+    padding: 0.2rem 0.6rem;
     border: 0;
     background-color: var(--primary-color);
     color: #fff;
@@ -159,10 +159,17 @@ section.pre-footer div h3{
     margin-bottom: 2px;
 }
 
-section.pre-footer a, section.pre-footer p{
-    color: #fff;
-    text-decoration: none;
-    font-size: 13px;
+section.pre-footer{
+    a, p{
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+    a{
+        width: fit-content;
+    }
+    
 }
 
 section.pre-footer img{
@@ -201,5 +208,68 @@ footer{
         font-weight: 200;
         color: #fff;
         text-align: center;
+    }
+}
+
+/* Media Query */
+
+@media screen and (min-width: 1024px) {
+    /* Header */
+    header .btnmenu{
+        display: none;
+    }
+
+    nav.containerMenu{
+        visibility: visible;
+        position: static;
+        opacity: 1;
+    }
+
+    nav.containerMenu ul.menu{
+        flex-direction: row;
+        width: 100%;
+        background-color: inherit;
+        box-shadow: none;
+        i{
+            display: none;
+        }
+    }
+
+    nav.containerMenu ul.menu a{
+        color: #fff;
+        border-bottom: none;
+    }
+
+    nav.containerMenu ul.menu a:hover{
+        text-decoration: underline;
+    }
+
+    nav.containerMenu ul.menu a.here{
+        color: #fff;
+        font-weight: bold;
+    }
+
+
+    /* Section */
+
+    .section{
+        width: 60vw;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        /* margin-left: 115px;
+        margin-right: 115px; */
+        /* border-radius: 10px; */
+    }
+
+    .section-btn{
+        font-size: 12px;
+        transition: all .1s ease-in-out;
+    }
+
+    .section-btn:hover{
+        background-color: #fff;
+        box-shadow: inset 0px 0px 0px 1px rgba(165,42,42,1);
+        color: #a52a2a;
+        font-weight: bold;
     }
 }

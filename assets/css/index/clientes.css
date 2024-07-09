@@ -69,3 +69,24 @@ span.logo-hover p{
     text-align: center;
     font-weight: 800;
 }
+
+@media screen and (min-width: 1024px) {
+    @keyframes slide {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-840px);
+        }
+    }
+
+    img.slider-img{
+        width: 100px;
+        height: 100px;
+    }
+
+    span.logo-hover{
+        width: 100px;
+        height: 100px;
+    }
+}
