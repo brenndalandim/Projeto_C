@@ -33,3 +33,22 @@ section.projetos i{
     height: 300px;
     object-fit: cover;
 }
+
+@media screen and (min-width: 1024px) {
+    .accordion-body {
+        padding: 1rem 10rem;
+    }
+
+    .accordion-body .end-data{
+        display: flex;
+        gap: 170px;
+    }
+
+    .accordion-body p{
+        margin-left: -8rem;
+    }
+
+    .carousel-item img{
+        height: 550px;
+    }
+}

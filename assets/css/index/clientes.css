@@ -23,7 +23,7 @@ section .slider-container div.slider{
     display: flex;
     gap: 30px;
     height: 105px;
-    animation: 15s infinite slide linear;
+    animation: 25s infinite slide linear;
 }
 
 section .slider-container div.slider:hover{

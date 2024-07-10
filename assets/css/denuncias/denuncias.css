@@ -2,7 +2,7 @@ section.denuncias{
     padding: 1rem;
 }
 
-section.denuncias h3{
+section.denuncias h3, section.denuncias p{
     padding-bottom: 1rem;
 }
 
@@ -10,11 +10,13 @@ section.denuncias form{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 1rem 3rem 0 3rem;
+    padding: 0 3rem;
 }
 
 section.denuncias form input:not(input[type='submit']), textarea{
     padding: .5rem 1rem;
+    border-radius: 3px;
+    border: 1px solid #767676;
 }
 
 section.denuncias form textarea{
@@ -30,4 +32,10 @@ section.denuncias form input[type='submit']{
     padding: .5rem 0;
     width: 200px;
     align-self: center;
+}
+
+@media screen and (min-width: 1024px) {
+    section.denuncias form{
+        padding: 0 20rem;
+    }
 }

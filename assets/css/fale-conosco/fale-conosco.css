@@ -1,5 +1,9 @@
-section.fale-conosco h3{
+section.fale-conosco{
     padding: 1rem;
+}
+
+section.fale-conosco h3, section.fale-conosco p{
+    padding-bottom: 1rem;
 }
 
 section.fale-conosco i{
@@ -15,6 +19,8 @@ section.fale-conosco form{
 
 section.fale-conosco form input:not(input[type='submit']), textarea{
     padding: .5rem 1rem;
+    border-radius: 3px;
+    border: 1px solid #767676;
 }
 
 section.fale-conosco form textarea{
@@ -30,5 +36,10 @@ section.fale-conosco form input[type='submit']{
     padding: .5rem 0;
     width: 200px;
     align-self: center;
-    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    section.fale-conosco form{
+        padding: 0 20rem;
+    }
 }
