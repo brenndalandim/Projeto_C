@@ -53,5 +53,6 @@ preFooter.innerHTML = `
 <div class="local">
     <h3>Localização </h3>
     <p><i class="bi bi-geo-alt"></i> Estrada de Jacarepaguá, 7655/1014 – RJ</p>
+    <a href="https://www.google.com/maps/place/Construtop+Engenharia+e+Consultoria+Ltda/@-22.942394,-43.341914,13z/data=!4m6!3m5!1s0x9bd833ceca9b83:0x15d08ea48158ad98!8m2!3d-22.9423943!4d-43.3419141!16s%2Fg%2F11clvw0mcn?hl=pt-BR&entry=ttu"><i class="bi bi-map"></i> Ver mapa</a>
 </div>
 `

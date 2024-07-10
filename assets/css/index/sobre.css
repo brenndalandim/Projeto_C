@@ -32,10 +32,12 @@ section .sobre-imagem{
         width: 60%;
         justify-content: space-evenly;
         gap: 0 !important;
+        padding: 1rem 2rem !important;
     }
 
     section .text p{
         font-size: 16px;
+        /* padding: 0 1rem; */
     }
 
     section .text p .construtop{
@@ -43,8 +45,13 @@ section .sobre-imagem{
         font-weight: bold;
     }
 
+    section .text .section-btn{
+        align-self: center;
+    }
+
     section .sobre-imagem{
-        max-height: 290px;
+        /* max-height: 290px; */
+        max-height: 410px;
         border-bottom-left-radius: 50px;
     }
 

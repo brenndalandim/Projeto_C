@@ -1,10 +1,28 @@
-section.val-mis{
-    display: flex;
-    flex-direction: column;
+@keyframes appearLeft {
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appearRight {
+    from{
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 section.val-mis .container{
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -33,10 +51,62 @@ section.val-mis img{
     height: 220px;
 }
 
-/* section.val-mis img:nth-child(2){
-    border-bottom-left-radius: 50px;
-}
+/*Media Query*/
 
-section.val-mis img:nth-child(1){
-    border-top-right-radius: 50px;
-} */
+@media screen and (min-width: 1024px){
+    section.val-mis{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    section.val-mis .container{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    
+    section.val-mis .container:nth-child(1){
+        flex-direction: row-reverse;
+    }
+
+    section.val-mis img{
+        object-fit: cover;
+        width: 55%;
+        height: auto;
+        max-height: 300px;
+    }
+
+    section.val-mis div:nth-child(1){
+        img,div{
+            animation: 1s appearLeft linear;
+        }
+        img{
+            border-bottom-left-radius: 50px;
+        }
+    }
+
+    section.val-mis div:nth-child(2){
+        img,div{
+            animation: 1s appearRight linear;
+        }
+        img{
+            border-top-right-radius: 50px;
+        }
+    }
+
+    .container div{
+        width: 50%;
+        justify-content: center;
+        gap: 20px;
+        /* padding: 1rem 10rem; */
+    }
+
+    .container div h3{
+        font-size: 30px;
+    }
+
+    .container div p{
+        font-size: 18px;
+    }
+}

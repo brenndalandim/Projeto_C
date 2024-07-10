@@ -1,3 +1,25 @@
+@keyframes appearUp {
+    from{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appearDown {
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 section.projetos .title{
     display: flex;
     gap: 10px;
@@ -15,6 +37,7 @@ section.projetos .imagens{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    overflow: hidden;
 }
 
 section.projetos .imagens div{
@@ -60,6 +83,8 @@ section.projetos .imagens div .name-hover p{
     border-radius: inherit;
 }
 
+/*Media Query*/
+
 @media screen and (min-width: 1024px) {
     section.projetos{
         display: flex;
@@ -67,16 +92,21 @@ section.projetos .imagens div .name-hover p{
     }
 
     section.projetos .title{
-        padding: 1rem;
+        padding: 1rem 2rem;
         width: 45%;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        /* align-items: center; */
+        /* text-align: center; */
         justify-content: space-evenly;
     }
 
     section.projetos .title p{
         display: block;
+        /* padding: 0 1rem; */
+    }
+
+    section.projetos .title .section-btn{
+        align-self: center;
     }
 
     section.projetos .imagens{
@@ -90,14 +120,16 @@ section.projetos .imagens div .name-hover p{
     }
 
     section.projetos .imagens div:nth-child(odd){
-        margin-top: 30px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+        margin-top: 40px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        animation: .7s appearUp linear;
     }
 
     section.projetos .imagens div:nth-child(even){
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        animation: .7s appearDown linear;
     }
 
     section.projetos .imagens div img{
@@ -120,6 +152,7 @@ section.projetos .imagens div .name-hover p{
     section.projetos .imagens div:hover{
         img{
             transform: scale(1.2);
+            filter: blur(1px)
         }
         span.name-hover{
             opacity: 1;

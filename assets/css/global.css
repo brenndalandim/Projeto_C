@@ -147,6 +147,7 @@ nav.containerMenu ul.menu a.here{
 section.pre-footer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "contato logo local";
     padding: 12px 1rem;
     background-color: #a52a2a;
     color: #fff;
@@ -179,18 +180,24 @@ section.pre-footer img{
     margin: auto;
     /* opacity: .3; */
     opacity: .6;
+    grid-area: logo;
 }
 
 section.pre-footer .contato{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    grid-area: contato;
 }
 
 section.pre-footer .local{
     text-align: right;
     display: flex;
     flex-direction: column;
+    grid-area: local;
+    a{
+        display: none;
+    }
 }
 
 
@@ -214,7 +221,20 @@ footer{
 /* Media Query */
 
 @media screen and (min-width: 1024px) {
+
     /* Header */
+
+    header{
+        justify-content: space-evenly;
+        padding: .5rem 5rem;
+        height: 82px;
+    }
+
+    header .logo-photo {
+        width: 90px;
+        vertical-align: middle;
+    }
+
     header .btnmenu{
         display: none;
     }
@@ -230,6 +250,7 @@ footer{
         width: 100%;
         background-color: inherit;
         box-shadow: none;
+        margin: 0;
         i{
             display: none;
         }
@@ -238,15 +259,19 @@ footer{
     nav.containerMenu ul.menu a{
         color: #fff;
         border-bottom: none;
+        font-size: 14px;
     }
 
     nav.containerMenu ul.menu a:hover{
-        text-decoration: underline;
+        text-decoration: underline 3px !important;
+        text-underline-offset: 34px;
     }
 
     nav.containerMenu ul.menu a.here{
         color: #fff;
-        font-weight: bold;
+        /* font-weight: bold; */
+        text-decoration: underline 3px !important;
+        text-underline-offset: 34px;
     }
 
 
@@ -255,10 +280,17 @@ footer{
     .section{
         width: 60vw;
         margin: 0 auto;
+        /* padding: 0px 20%; */
         margin-bottom: 10px;
-        /* margin-left: 115px;
-        margin-right: 115px; */
         /* border-radius: 10px; */
+    }
+
+    .section-title{
+        font-size: 14px;
+    }
+
+    .section-title i{
+        font-size: 16px;
     }
 
     .section-btn{
@@ -272,4 +304,45 @@ footer{
         color: #a52a2a;
         font-weight: bold;
     }
+
+
+    /*Pre Footer*/
+
+    section.pre-footer{
+        grid-template-columns: 1fr .5fr 1fr;
+        grid-template-areas: "logo contato local";
+        a:hover{
+            text-decoration: underline !important;
+        }
+    }
+
+    section.pre-footer div{
+        gap: 7px;
+    }
+
+    section.pre-footer div h3{
+        font-size: 18px;
+        margin: 0;
+    }
+
+    section.pre-footer{
+        a,p{
+            font-size: 14px;
+        }
+    }
+
+    section.pre-footer .local{
+        text-align: left;
+        a{
+            display: block;
+        }
+    }
+
+    /*Footer*/
+
+    footer p{
+        font-size: 12px;
+        font-weight: 300;
+    }
+
 }

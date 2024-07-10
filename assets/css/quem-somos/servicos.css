@@ -14,13 +14,22 @@ section.servicos div ul{
     gap: 7px;
 }
 
-/* section.servicos div ul li:not(li:last-child)::before{
-    content: "\2714";
-    margin-right: .5rem;
-    font-size: .8rem;
-} */
-
 section.servicos img{
     width: 50%;
     object-fit: cover;
+}
+
+@media screen and (min-width: 1024px){
+    section.servicos div{
+        justify-content: center;
+        gap: 80px;
+    }
+
+    section.servicos div ul{
+        font-size: 18px;
+    }
+    section.servicos img{
+        width: auto;
+        max-height: 200px;
+    }
 }
