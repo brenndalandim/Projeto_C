@@ -37,9 +37,3 @@ section.fale-conosco form input[type='submit']{
     width: 200px;
     align-self: center;
 }
-
-@media screen and (min-width: 1024px) {
-    section.fale-conosco form{
-        padding: 0 20rem;
-    }
-}
